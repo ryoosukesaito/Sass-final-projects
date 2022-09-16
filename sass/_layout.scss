@@ -1,0 +1,88 @@
+@use 'base' as *;
+
+// header
+.header-top{
+  @include flexLayout;
+  justify-content: space-between;
+  background-color: $color-black;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+}
+
+.header-main{
+  width: 100%;
+  height: 90vh;
+  background:linear-gradient(rgba($color-back,0.5),rgba(0,0,0,8)),url("../images/top-back-shibya.jpg")no-repeat center/cover fixed;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.header-text{
+  color:$color-white;
+  // font-weight: 300;
+  font:bold;
+}
+
+.header-title{
+  font:bold;
+}
+
+//main
+
+.container{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width:769px) {
+    max-width: 750px;
+  }
+  @media (max-width:768px) {
+    max-width: 600px;
+  }
+  @media (max-width:768px) {
+    max-width: 600px;
+  }
+}
+
+.unit-example{
+  margin-top: 30px;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-title{
+  margin-bottom: 48px;
+
+}
+
+footer{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  background-color: $color-neiby;
+  color:$color-white;
+}
+
+.footer-copyright{
+  display: flex;
+  justify-content: center;
+
+}
+
+.footer-copyright-paragraph{
+  margin:15px;
+}
+
+.footer-copyright-paragraph span{
+  color: $color-secondary;
+}

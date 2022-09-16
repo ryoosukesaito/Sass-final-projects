@@ -1,0 +1,105 @@
+$color-back: #fdfaf7;
+$color-black: #333;
+$color-white: #fff ;
+$color-primary: #f6972a;
+$color-secondary: #bbb;
+$color-neiby:#24355C;
+
+
+$font-Arial: Poppins, Arial, sans-serif;
+$font-Helvetica: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+@mixin flexLayout{
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+}
+
+@mixin textStyles($transform: uppercase) {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: $transform;
+}
+
+@mixin fullSpace{
+  width: 100%;
+  height: 100%;
+}
+
+@mixin centering($topValue) {
+  position: absolute;
+  top: $topValue;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin imageFix {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+@mixin marginTb{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+body{
+  background-color: $color-back;
+  font-family: $font-Helvetica;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0%;
+
+
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+}
+
+main{
+  margin-top: 3rem;
+  text-align: center;
+}
+
+h2{
+  font-weight: 700;
+  font-size: 2rem;
+  color:$color-primary;
+}
+
+p{
+  margin-bottom: 1rem;
+}
+
+label{
+  color:$color-secondary;
+}
+
+.container p{
+  margin-top: 1rem;
+}
+
+.hr-space{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.nav-list a{
+  color: $color-white;
+
+}
