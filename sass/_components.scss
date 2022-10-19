@@ -67,10 +67,11 @@
     flex-direction: column;
     background-color: $color-black;
     width: 100%;
+    height: 100vh;
     text-align: center;
     transition: 0.3s;  
 
-    &:active{
+    &.active{
       left: 0;
       z-index: 1200;
     }
@@ -111,13 +112,15 @@
   .hamburger{
     display: block;
     // width: 30%;
-    &:active .bar:nth-child(2){
+    &.active .bar:nth-child(2){
       opacity: 0;
     }
-    &:active .bar:nth-child(1){
+  
+
+    &.active .bar:nth-child(1){
       transform: translateY(8px) rotate(45deg);
     }
-    &:active .bar:nth-child(3){
+    &.active .bar:nth-child(3){
       transform: translateY(-8px) rotate(-45deg);
     }
   }

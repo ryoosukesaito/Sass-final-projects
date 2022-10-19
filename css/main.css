@@ -206,10 +206,11 @@ footer {
     flex-direction: column;
     background-color: #333;
     width: 100%;
+    height: 100vh;
     text-align: center;
     transition: 0.3s;
   }
-  .nav-list:active {
+  .nav-list.active {
     left: 0;
     z-index: 1200;
   }
@@ -247,13 +248,13 @@ footer {
   .hamburger {
     display: block;
   }
-  .hamburger:active .bar:nth-child(2) {
+  .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
-  .hamburger:active .bar:nth-child(1) {
+  .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
-  .hamburger:active .bar:nth-child(3) {
+  .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
